@@ -38,7 +38,7 @@ class LinebotsController < ApplicationController
   
     def search_and_create_message(input)
       HOTPEPPER_API_KEY.configure do |c|
-        c.application_id = ENV['HOTPEPPER_API_KEY']
+        c.application_id = "http://webservice.recruit.co.jp/hotpepper/shop/v1/"
       end
       # 楽天の商品検索APIで画像がある商品の中で、入力値で検索して上から3件を取得する
       # 商品検索+ランキングでの取得はできないため標準の並び順で上から3件取得する
