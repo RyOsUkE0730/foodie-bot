@@ -37,6 +37,7 @@ class LinebotsController < ApplicationController
     end
   
   # APIの記述を修正
+  # APIkeyが異なっている可能性あり
     def search_and_create_message(input)
       HOTPEPPER_API_KEY.configure do |c|
         c.application_id = "http://webservice.recruit.co.jp/hotpepper/shop/v1/"
