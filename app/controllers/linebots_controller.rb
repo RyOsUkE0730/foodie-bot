@@ -36,7 +36,7 @@ class LinebotsController < ApplicationController
       end
     end
   
-  # APIの記述を修正
+  # APIの記述を修正必要
   # APIkeyが異なっている可能性あり
     def search_and_create_message(input)
       HOTPEPPER_API_KEY.configure do |c|
